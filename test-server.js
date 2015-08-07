@@ -18,7 +18,7 @@ app.use(require('cors')())
 
 app.get('/', function (req, res) {
   opentok.createSession({
-    mediaMode: 'relayed'
+    mediaMode: 'routed'
   }, function (err, result) {
     if (err) {
       return res.sendStatus(500)
